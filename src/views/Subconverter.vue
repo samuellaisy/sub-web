@@ -255,7 +255,16 @@ export default {
           ClashR: "clashr",
           Surge2: "surge&ver=2",
         },
-        backendOptions: [{ value: "https://yellow-flower-5c50.samuellaisy.workers.dev/sub?" }],
+        customBackend: {
+           "localhost:2500 本地版": "http://localhost:2500/sub?",
+           "sub.vmessvpn.tk (samuel提供) ": "https://sub.vmessvpn.tk/sub?",
+           "subcon.dlj.tf(subconverter作者提供稳定)": "https://subcon.dlj/sub?",
+        },   
+        backendOptions: [
+        { value: "http://localhost:2500/sub?" },
+        { value: "https://sub.vmessvpn.tk/sub?" },
+        { value: "https://subcon.dlj/sub?" },
+        ],
         remoteConfig: [
         {
             label: "ACL4SSR",
